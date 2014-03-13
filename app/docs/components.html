@@ -18,7 +18,7 @@
 	<!-- endbuild -->
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".sidenav">
 	<nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,9 +35,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/docs/code.html">Docs</a></li>
-        <li><a href="/docs/style.html">Style</a></li>
+        <li><a href="/style.html">Style</a></li>
         <li><a href="/docs/components.html">Components</a></li>
+        <li><a href="/docs/code.html">Docs</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -50,19 +50,23 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-3">
-			<ul class="nav nav-pills nav-stacked">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Messages</a></li>
+		<div class="col-sm-3 sidenav" style="position: relative;">
+			<div class="sticky-nav" data-spy="affix" data-offset-top="60" data-offset-bottom="200" style="z-index: 9999">
+				<ul id="docsNav" class="nav nav-pills nav-stacked">
+
 </ul>
 
 
+			</div>
 		</div>
 		<div class="container col-sm-9">
 			
 
-avaters, list, forms, etc...
+<div style="height: 500px;"><h3 id="Buttons">Buttons</h3></div>
+<div style="height: 500px;"><h3 id="Avatar">Avatar</h3></div>
+<div style="height: 500px;"><h3 id="Box">Box</h3></div>
+<div style="height: 500px;"><h3 id="Panel">Panels</h3></div>
+<div style="height: 500px;"><h3 id="Header">Header</h3></div>
 
 		</div>
 	</div>
@@ -89,7 +93,7 @@ avaters, list, forms, etc...
 	<!-- endbuild -->
 
 	<!-- build:js scripts/main.js -->
-	<script src="scripts/main.js"></script>
+	<script src="../scripts/main.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

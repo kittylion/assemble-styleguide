@@ -18,7 +18,7 @@
 	<!-- endbuild -->
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".sidenav">
 	{{> top-nav }}
 	<div class="row">
 		<div class="col-sm-12">
@@ -27,8 +27,10 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-3">
-			{{> docs-navigation }}
+		<div class="col-sm-3 sidenav" style="position: relative;">
+			<div class="sticky-nav" data-spy="affix" data-offset-top="60" data-offset-bottom="200" style="z-index: 9999">
+				{{> docs-navigation }}
+			</div>
 		</div>
 		<div class="container col-sm-9">
 			{{> body }}
@@ -57,7 +59,7 @@
 	<!-- endbuild -->
 
 	<!-- build:js scripts/main.js -->
-	<script src="scripts/main.js"></script>
+	<script src="../scripts/main.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

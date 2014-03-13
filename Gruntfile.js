@@ -312,8 +312,12 @@ module.exports = function (grunt) {
 			docs: {
 			    // override task-level layout
 			    options: {
-			    	layout: '<%= yeoman.app %>/templates/layouts/docs-layout.hbs' },
-			    	files: {'<%= yeoman.app %>/docs/': ['<%= yeoman.app %>/templates/docs/*.hbs' ]},
+			    	layout:
+			    		'<%= yeoman.app %>/templates/layouts/docs-layout.hbs'
+			    	},
+			    	files: {
+			    		'<%= yeoman.app %>/docs/': ['<%= yeoman.app %>/templates/docs/*.hbs' ]
+			    	}
 			},
 			pages: {
 				// files: {
