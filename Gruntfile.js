@@ -306,8 +306,14 @@ module.exports = function (grunt) {
 			options: {
 				flatten: true,
 				layout: '<%= yeoman.app %>/templates/layouts/default.hbs',
-				partials: ['<%= yeoman.app %>/templates/partials/*.hbs'],
+				partials: ['<%= yeoman.app %>/templates/partials/*.hbs', '<%= yeoman.app %>/templates/partials/*/*.*'],
 				helpers: ['handlebars-helpers']
+			},
+			docs: {
+			    // override task-level layout
+			    options: {
+			    	layout: '<%= yeoman.app %>/templates/layouts/docs-layout.hbs' },
+			    	files: {'<%= yeoman.app %>/docs/': ['<%= yeoman.app %>/templates/docs/*.hbs' ]},
 			},
 			pages: {
 				// files: {
