@@ -9,6 +9,7 @@ $("h3").each(function() {
   title = el.text();
   link = "#" + el.attr("id");
 
+  el.addClass('sg-docs-title');
   newLine =
     "<li>" +
       "<a href='" + link + "'>" +

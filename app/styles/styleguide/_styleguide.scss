@@ -1,0 +1,124 @@
+// Styleguide SASS
+//
+// Made by Kunju Studios 2014
+// Dependencies: bootstrap-sass
+
+
+/* =========== SG COLORS =========== */
+
+$sg-color-black: rgb(0, 0, 0);
+$sg-coler-grey1: rgb(168, 168, 168);
+$sg-color-grey2: #777;
+$sg-color-grey3: #f5f5f5;
+
+
+
+
+/* =========== GENERAL UI =========== */
+
+// Top nav
+
+.sg-navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+// Page hero
+
+.sg-page-hero {
+  background-color: #000;
+  padding: 50px 0;
+
+  & .sg-page-title {
+    margin-top: 0;
+    font-size: 26px;
+    font-weight: normal;
+    color: #fff;
+
+    & > small {
+      float: left;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 5px;
+      color: #fff;
+
+    }
+  }
+
+  & .sg-page-lead {
+    max-width: 600px;
+    padding-left: 13px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: $sg-coler-grey1;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+
+
+/* =========== DOCS PAGES =========== */
+
+
+.sg-content {
+  padding-top: 60px;
+  border-left: 1px solid #ddd;
+  padding-left: 50px;
+}
+
+.sg-docs-title {
+  @extend h1;
+  margin: 0 0 20px;
+  padding-top: 40px;
+  &:first-of-type {
+    padding-top: 0;
+  }
+  & + hr {
+    margin-bottom: 20px;
+  }
+
+}
+
+// Docs navigation
+
+.sg-nav-container {
+  @include make-md-column(3);
+  padding-top: 60px;
+  padding-right: 0;
+}
+
+.sg-docs-nav-affix {
+  width: 277px;
+  margin-right: 0;
+  &.affix {
+    top: 60px;
+  }
+}
+
+.sg-docs-nav {
+  width: 100%;
+  &.nav-pills {
+    & > li {
+      margin: 0;
+      &.active {
+        & > a {
+          background-color: transparent;
+          color: $sg-color-black;
+          background-color: $sg-color-grey3;
+          border-radius: 0;
+        }
+      }
+      & > a {
+        padding: 10px 35px;
+        font-size: 14px;
+        text-align: right;
+        color: $sg-color-grey2;
+        &:hover {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

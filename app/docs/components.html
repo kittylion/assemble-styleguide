@@ -1,26 +1,28 @@
 <!doctype html>
 <html class="no-js">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>assemble-styleguide</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>assemble-styleguide</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-	<!-- build:js scripts/jquery.js -->
-	<script src="../bower_components/jquery/jquery.js"></script>
-	<!-- endbuild -->
+  <!-- build:js scripts/jquery.js -->
+  <script src="../bower_components/jquery/jquery.js"></script>
+  <!-- endbuild -->
 
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<!-- build:css(.tmp) styles/styles.css -->
-	<link rel="stylesheet" href="../styles/styles.css">
-	<!-- endbuild -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.tmp) styles/styles.css -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <!-- endbuild -->
 
 </head>
-<body data-spy="scroll" data-target=".sidenav">
-	<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
+
+<body data-spy="scroll" data-target=".sg-nav-container">
+
+  <nav class="sg-navbar navbar navbar-default" role="navigation">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -43,57 +45,72 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-	<div class="row">
-		<div class="col-sm-12">
-			<h1>Components</h1>
-			<p>All components</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-3 sidenav" style="position: relative;">
-			<div class="sticky-nav" data-spy="affix" data-offset-top="60" data-offset-bottom="200" style="z-index: 9999">
-				<ul id="docsNav" class="nav nav-pills nav-stacked">
-
+  <div class="row sg-page-hero">
+    <div class="container">
+      <div class="col-sm-12">
+        <h1 class="sg-page-title"><small>+</small>COMPONENTS</h1>
+        <p class="sg-page-lead">Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="sg-nav-container">
+        <div class="sg-docs-nav-affix" data-spy="affix" data-offset-top="228" data-offset-bottom="200">
+          <ul id="docsNav" class="sg-docs-nav nav nav-pills nav-stacked">
+ 
 </ul>
 
 
-			</div>
-		</div>
-		<div class="container col-sm-9">
-			
+        </div>
+      </div>
+      <div class="container col-sm-9 sg-content">
+        
+<h3 id="buttons">Buttons</h3>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, nostrum, aliquid, et, ducimus aliquam consequuntur quae molestias dicta laboriosam magni est ab similique magnam unde tenetur amet mollitia! Ut, consequatur!</p>
+<div class="btn btn-primary">Button</div>
 
-<div style="height: 500px;"><h3 id="Buttons">Buttons</h3></div>
-<div style="height: 500px;"><h3 id="Avatar">Avatar</h3></div>
-<div style="height: 500px;"><h3 id="Box">Box</h3></div>
-<div style="height: 500px;"><h3 id="Panel">Panels</h3></div>
-<div style="height: 500px;"><h3 id="Header">Header</h3></div>
-
-		</div>
-	</div>
+<p><br></p>
+<pre><code class="language-html">    &lt;div class=&quot;btn&quot;&gt;Button&lt;/div&gt;</code></pre>
+<pre><code class="language-css">    .btn {
+        @include btn();
+    }</code></pre>
 
 
 
-	<!-- build:js scripts/vendor.js -->
-	<!-- bower:js -->
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-	<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-	<!-- endbower -->
-	<script src="../scripts/lib/jquery.scrollagent.js"></script>
-	<script src="../scripts/lib/jquery.scrollstick.js"></script>
-	<!-- endbuild -->
+<div style="height: 500px;"><h3 class="sg-docs-title" id="Avatar">Avatar</h3></div>
+<div style="height: 500px;"><h3 class="sg-docs-title" id="Box">Box</h3></div>
+<div style="height: 500px;"><h3 class="sg-docs-title" id="Panel">Panels</h3></div>
+<div style="height: 500px;"><h3 class="sg-docs-title" id="Header">Header</h3></div>
 
-	<!-- build:js scripts/main.js -->
-	<script src="../scripts/main.js"></script>
-	<!-- endbuild -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+  <!-- endbower -->
+  <script src="../scripts/lib/jquery.scrollagent.js"></script>
+  <script src="../scripts/lib/jquery.scrollstick.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="../scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
