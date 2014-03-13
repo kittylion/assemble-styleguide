@@ -1,6 +1,6 @@
 {
-  "name": "doctemplate",
-  "version": "0.0.0",
+  "name": "assemble-styleguide",
+  "version": "0.0.1",
   "dependencies": {
   },
   "devDependencies": {

@@ -310,9 +310,13 @@ module.exports = function (grunt) {
 				helpers: ['handlebars-helpers']
 			},
 			pages: {
+				// files: {
+				// 	'<%= yeoman.app %>/': ['<%= yeoman.app %>/templates/pages/*.*', '!<%= yeoman.app %>/templates/pages/index.hbs']
+				// }
 				files: {
-					'<%= yeoman.app %>/': ['<%= yeoman.app %>/templates/pages/*.*', '!<%= yeoman.app %>/templates/pages/index.hbs']
+					'<%= yeoman.app %>/': ['<%= yeoman.app %>/templates/pages/*.*']
 				}
+
 			},
 			index: {
 				files: {
@@ -336,6 +340,7 @@ module.exports = function (grunt) {
 			'concurrent:server',
 			'autoprefixer',
 			'connect:livereload',
+			'assemble',
 			'watch'
 		]);
 	});
